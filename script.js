@@ -1,6 +1,9 @@
+let isCelsius = true;
 async function getWeather() {
     const city = document.getElementById("city").value;
     const apiKey = "fb0e21595ff6125c4aed21ef4fba3225"; // Replace with your real API key
+    const unit = useCelsius ? "metric" :"imperial";
+    const symbol=useCelsius ? "°C" :"°F";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   
     const response = await fetch(url);
@@ -14,5 +17,13 @@ async function getWeather() {
       `;
     } else {
       document.getElementById("result").innerHTML = `<p>City not found.</p>`;
+    }
+  }
+
+  function toggleUnit(){
+    useCelsius = !useCelsius;
+    const city = document.getElementById("city").value;
+    if(city){
+        getWeather();
     }
   }
