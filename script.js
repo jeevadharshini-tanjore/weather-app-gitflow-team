@@ -1,3 +1,4 @@
+
 let isCelsius = true; // Default is Celsius
 
 // Function to get weather
