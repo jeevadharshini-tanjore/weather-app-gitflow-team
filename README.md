@@ -30,7 +30,6 @@ git clone https://github.com/YOUR-USERNAME/weather-app-gitflow.git
 
 3.Open index.html in your browser and try it!
 
-Screenshot (210) Screenshot (211)
 
 Learning Outcome This project demonstrates how to: Work with Git like a professional developer Create and merge feature, release, and hotfix branches Tag and version a real release
 
